@@ -16,7 +16,7 @@ data$datetime <- paste(data$date, data$time)
 # Convert date and time format
 data$datetime <- strptime(data$datetime, format="%d/%m/%Y %H:%M:%S")
 
-# Create histogram and ave as PNG
+# Create histogram and save as PNG
 png("plot1.png", width=480, height=480, units="px")
 hist(data$global_active_power, col="red",
      main="Global Active Power", xlab="Global Active Power (kilowatts)")
